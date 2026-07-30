@@ -1,2 +1,2 @@
 # Multi-Agent-Story-Writing-Bot
-A story writing bot just for you!
+A Multi Agent Story Writing bot just for you!

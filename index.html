@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Multi-Agent Story Writer</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <h1>Multi-Agent Story Writer</h1>
+
+      <section class="controls">
+        <label for="prompt">Your idea or prompt</label>
+        <textarea id="prompt" rows="4" placeholder="Describe a setting, theme, or opening line..."></textarea>
+
+        <div id="ideaSuggestions" class="ideas hidden">
+          <div class="ideasHeader">
+            <div>
+              <h2>Story Idea Suggestions</h2>
+              <p>Plot Planner will generate story hooks and prompts for you to select.</p>
+            </div>
+            <p class="ideaNote">Click any idea to load it into your prompt.</p>
+          </div>
+          <div class="ideaList"></div>
+        </div>
+
+        <div class="agents">
+          <label><input type="checkbox" data-agent="planner" checked> Plot Planner</label>
+          <label><input type="checkbox" data-agent="characters" checked> Character Designer</label>
+          <label><input type="checkbox" data-agent="narrator" checked> Narrator (final story)</label>
+        </div>
+
+        <button id="writeBtn">Write Story</button>
+      </section>
+
+      <section id="results">
+        <h2>Agent Outputs</h2>
+        <div id="agentResults"></div>
+
+        <h2>Final Story</h2>
+        <article id="finalStory" class="story"></article>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
